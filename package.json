@@ -2,8 +2,9 @@
   "name": "devops",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "jest",
     "build": "webpack src/app.js -o public/bundle.js",
     "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
